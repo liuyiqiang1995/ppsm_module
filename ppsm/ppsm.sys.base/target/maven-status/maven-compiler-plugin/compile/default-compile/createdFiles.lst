@@ -1,0 +1,6 @@
+com\ppsm\mobile\sys\base\context\NaomsSystemContext.class
+com\ppsm\mobile\sys\base\exception\PpsmException.class
+com\ppsm\mobile\sys\base\context\ClientInvokeInfo.class
+com\ppsm\mobile\sys\base\context\NaomsSystemContext$1.class
+com\ppsm\mobile\sys\base\context\NaomsSystemContext$2.class
+com\ppsm\mobile\sys\base\context\NaomsSystemContext$3.class

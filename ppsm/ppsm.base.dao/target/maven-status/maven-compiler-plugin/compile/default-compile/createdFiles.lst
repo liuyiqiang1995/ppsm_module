@@ -1,0 +1,5 @@
+com\ppsm\mobile\dao\phoneImpl\PpsmHtmlDao.class
+com\ppsm\mobile\dao\phoneImpl\PpsmMonitorDao.class
+com\ppsm\mobile\dao\phoneImpl\MobileProductDao.class
+com\ppsm\mobile\dao\phoneImpl\ProductRelationDao.class
+com\ppsm\mobile\dao\phoneImpl\MobilePriceDao.class
