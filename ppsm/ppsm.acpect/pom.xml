@@ -16,7 +16,7 @@
 
         <dependency>
             <groupId>com.ppsm</groupId>
-            <artifactId>ppsm.sys.base</artifactId>
+            <artifactId>ppsm.sys.common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

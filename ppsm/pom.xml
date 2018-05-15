@@ -19,6 +19,9 @@
     <module>ppsm.server</module>
     <module>ppsm.acpect</module>
     <module>ppsm.mobile.controller</module>
+    <module>ppsm.server.login</module>
+    <module>ppsm.mobile.controller.login</module>
+    <module>ppsm.mobile.core.login</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -255,6 +258,18 @@
       <version>1.3.0</version>
     </dependency>
 
+    <!-- java-web-token 验证授权-->
+    <dependency>
+      <groupId>com.auth0</groupId>
+      <artifactId>java-jwt</artifactId>
+      <version>3.2.0</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt</artifactId>
+      <version>0.7.0</version>
+    </dependency>
   </dependencies>
 
 </project>
