@@ -40,4 +40,9 @@ public class PpsmController {
         return ppsmPriceRootIdDtos;
     }
 
+    @RequestMapping(value = "/getMonitorTime",produces="application/json;charset=utf-8",method = RequestMethod.GET)
+    @ResponseBody
+    public Long getMonitorTime(){
+        return ppsmPriceService.getMonitorTime();
+    }
 }

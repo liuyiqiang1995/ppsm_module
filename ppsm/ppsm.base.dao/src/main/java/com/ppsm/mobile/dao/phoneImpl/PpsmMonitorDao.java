@@ -1,6 +1,7 @@
 package com.ppsm.mobile.dao.phoneImpl;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * @Description:
@@ -10,5 +11,7 @@ import java.sql.Timestamp;
 public interface PpsmMonitorDao {
 
     void insertMonitor(Timestamp time);
+
+    Date queryMonitorTime();
 
 }

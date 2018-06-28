@@ -8,4 +8,8 @@
         INSERT INTO ppsm_monitor(update_time) VALUES( #{time} )
     </insert>
 
+    <select id="queryMonitorTime" resultType="java.util.Date">
+        SELECT m1.update_time FROM ppsm_monitor m1 WHERE m1.update_time in (SELECT MAX(m2.update_time) FROM ppsm_monitor m2)
+    </select>
+
 </mapper>

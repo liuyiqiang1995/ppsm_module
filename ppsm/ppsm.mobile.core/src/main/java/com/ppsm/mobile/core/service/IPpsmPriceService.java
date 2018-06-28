@@ -15,4 +15,6 @@ public interface IPpsmPriceService {
     List<PpsmPriceDto> getPpsmPriceAll();
 
     List<PpsmPriceRootIdDto> getPriceForRootIdAll();
+
+    Long getMonitorTime();
 }

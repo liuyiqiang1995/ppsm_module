@@ -1,2 +1,3 @@
 com\ppsm\mobile\aspect\ServiceInvokeAop.class
+com\ppsm\mobile\interceptor\LoginInterceptor.class
 com\ppsm\mobile\aspect\JobCoreAspect.class

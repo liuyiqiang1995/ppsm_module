@@ -7,6 +7,7 @@ import com.ppsm.mobile.base.entity.MobilePrice;
 import com.ppsm.mobile.base.entity.ProductRelation;
 import com.ppsm.mobile.core.service.IPpsmPriceService;
 import com.ppsm.mobile.dao.phoneImpl.MobilePriceDao;
+import com.ppsm.mobile.dao.phoneImpl.PpsmMonitorDao;
 import com.ppsm.mobile.dao.phoneImpl.ProductRelationDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -30,6 +32,8 @@ public class PpsmPriceServiceImpl implements IPpsmPriceService {
     MobilePriceDao mobilePriceDao;
     @Autowired
     ProductRelationDao productRelationDao;
+    @Autowired
+    PpsmMonitorDao ppsmMonitorDao;
 
     public List<PpsmPriceDto> getPpsmPriceAll() {
         List<MobilePrice> mobilePrices = mobilePriceDao.queryPriceAll();
@@ -53,4 +57,14 @@ public class PpsmPriceServiceImpl implements IPpsmPriceService {
         }
         return ppsmPriceRootIdDtos;
     }
+
+    public Long getMonitorTime() {
+        Date monitorTime = ppsmMonitorDao.queryMonitorTime();
+        if(monitorTime == null){
+            return 0l;
+        }else{
+            return monitorTime.getTime();
+        }
+    }
+
 }

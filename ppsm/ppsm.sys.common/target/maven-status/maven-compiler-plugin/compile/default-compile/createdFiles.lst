@@ -1,3 +1,4 @@
 com\ppsm\mobile\sys\common\ListUtils.class
 com\ppsm\mobile\sys\common\DateStringUtil.class
+com\ppsm\mobile\sys\common\JwtUtil.class
 com\ppsm\mobile\sys\common\StringUtil.class

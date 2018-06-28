@@ -2,3 +2,4 @@ com\ppsm\mobile\base\entity\ProductRelation.class
 com\ppsm\mobile\base\entity\PpsmHtml.class
 com\ppsm\mobile\base\entity\MobileProduct.class
 com\ppsm\mobile\base\entity\MobilePrice.class
+com\ppsm\mobile\base\entity\PpsmMonitor.class
